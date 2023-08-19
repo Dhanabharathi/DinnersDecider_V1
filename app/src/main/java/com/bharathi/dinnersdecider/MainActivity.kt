@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             val newfood = addFood.text.toString()
             foodlist.add(newfood)
             Toast.makeText(applicationContext,"New food added",Toast.LENGTH_SHORT).show()
+
         }
     }
 }
