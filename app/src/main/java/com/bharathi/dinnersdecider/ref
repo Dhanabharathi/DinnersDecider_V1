@@ -1,0 +1,8 @@
+
+
+This below code can help to create to the orginal app names
+
+var selectedFoodText = findViewById<TextView>(R.id.selectedfoodText)
+        var addfood = findViewById<TextView>(R.id.Addfood)
+        selectedFoodText.text="Burker king"
+        addfood.text="enter the food name"

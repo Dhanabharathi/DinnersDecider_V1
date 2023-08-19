@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DinnersDecider</string>
+    <string name="DecideButton">Decide...</string>
+    <string name="selectedfoodText">briyani</string>
+    <string name="TitleName">DinnerDecider</string>
+
+
+</resources>
