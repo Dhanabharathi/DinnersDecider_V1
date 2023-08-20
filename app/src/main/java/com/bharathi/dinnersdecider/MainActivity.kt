@@ -9,7 +9,7 @@ import kotlin.random.Random
 
 
 class MainActivity : AppCompatActivity() {
-    private val foodlist = arrayListOf("dosa", "idly", "briyani", "chicken", "mutton")
+    private val foodlist = arrayListOf("dosa","idly","briyani","chicken","mutton")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -17,18 +17,17 @@ class MainActivity : AppCompatActivity() {
         val addFood = findViewById<TextView>(R.id.Addfood)
         val decideButton = findViewById<Button>(R.id.decideButton)
         val addfoodbutton = findViewById<Button>(R.id.addbutton)
-        decideButton.setOnClickListener {
+        decideButton.setOnClickListener{
 
             val randomFood = Random.nextInt(foodlist.count())
-            selectedFoodText.text = foodlist[randomFood]
+            selectedFoodText.text=foodlist[randomFood]
 
         }
 
-        addfoodbutton.setOnClickListener {
+        addfoodbutton.setOnClickListener{
             val newfood = addFood.text.toString()
             foodlist.add(newfood)
-            Toast.makeText(applicationContext, "New food added", Toast.LENGTH_SHORT).show()
-
+            Toast.makeText(applicationContext,"New food added",Toast.LENGTH_SHORT).show()
         }
     }
 }
