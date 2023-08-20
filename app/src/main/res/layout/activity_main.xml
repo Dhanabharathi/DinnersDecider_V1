@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/titlebar"
         android:layout_width="match_parent"
-        android:layout_height="51dp"
+        android:layout_height="50dp"
         android:background="@color/title"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/TitleName"
@@ -21,12 +21,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/ddlogo"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="72dp"
+        android:backgroundTint="@color/Dinnerdeciderbackground"
+        android:clickable="true"
         android:contentDescription="logo"
+        android:focusable="true"
         app:layout_constraintBottom_toTopOf="@+id/selectedfoodText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -44,6 +47,7 @@
         android:text="@string/selectedfoodText"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
         android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/Addfood"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,6 +66,7 @@
         android:inputType="text|textAutoComplete"
         android:textAlignment="center"
         android:textAllCaps="false"
+        android:textColor="@color/black"
         android:textSize="23sp"
         app:layout_constraintBottom_toTopOf="@+id/addbutton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +96,6 @@
         android:layout_width="140dp"
         android:layout_height="55dp"
         android:layout_marginEnd="16dp"
-        android:alpha="0.65"
         android:fontFamily="sans-serif-condensed-light"
         android:text="@string/DecideButton"
         android:textAlignment="center"
